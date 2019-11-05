@@ -24,5 +24,5 @@ get '/films/:index' do
   films = Film.all
   id = params[:index].to_i - 1
   @price = films[id].price
-  erb (:index)
+  erb (:'films/index')
 end
